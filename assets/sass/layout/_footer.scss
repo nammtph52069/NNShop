@@ -1,0 +1,72 @@
+.footer__wrapper {
+  .footer__main {
+    padding: 4.8rem 0;
+    display: flex;
+    gap: 3rem;
+    .footer__infor {
+      flex: 4;
+      & > h2 {
+        @include txtDefine;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      & > p {
+        @include txtDefine;
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray-9F9;
+        margin-top: 5rem;
+      }
+    }
+    .footer__link {
+      flex: 2;
+      & > h4 {
+        color: $gray-9F9;
+      }
+      & > .nav__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4.6rem;
+        margin-top: 5.5rem;
+      }
+    }
+    .footer__contact {
+      flex: 4;
+      & > h4 {
+        color: $gray-9F9;
+      }
+      .footer__form {
+        margin-top: 5.5rem;
+        & > input {
+          @include txtDefine;
+          width: 20rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $gray-9F9;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #000;
+        }
+        & > button {
+          color: #000;
+          font-size: 1.4rem;
+          font-weight: 500;
+          padding-bottom: .2rem;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #000;
+          background: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer__copyright {
+    color: #000;
+    @include txtDefine;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3.5rem 0 3.8rem 0;
+    border-top: 1px solid #000;
+  }
+}

@@ -1,0 +1,80 @@
+.shopPage__header {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: $yellow-FAF;
+  // ===== HEADER LEFT ===== //
+  .header__left {
+    gap: 3.2rem;
+    .header__left__col {
+        gap: 2.4rem;
+      .filter {
+        gap: 1.2rem;
+      }
+      .header__left--desc {
+        @include txtDefine;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .header__line {
+      width: .2rem;
+      height: 4rem;
+      background-color: $gray-9F9;
+    }
+  }
+  // ===== HEADER RIGHT ===== //
+  .header__right {
+    gap: 3rem;
+    .header__form {
+      gap: 1.8rem;
+      & > input {
+        height: 5rem;
+        width: 5rem;
+        border: none;
+        outline: none;
+        border-radius: .4rem;
+        text-align: center;
+        color: $gray-9F9;
+        background: #fff;
+      }
+      .form__input_2 {
+        width: 20rem;
+        text-align: left;
+        padding: 0 3rem;
+      }
+    }
+  }
+}
+
+.shopPage__body {
+  margin-top: 4.6rem;
+  margin-bottom: 8rem;
+}
+
+.shopPage__footer {
+  .viewMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    .viewMore--items {
+      width: 6rem;
+      height: 6rem;
+      border-radius: .8rem;
+      font-size: 2rem;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $yellow-F9F;
+      cursor: pointer;
+      &:last-child {
+        width: 10rem;
+      }
+      .viewMore--active {
+        color: white;
+        background-color: $yellow-B88;
+      }
+    }
+  }
+}

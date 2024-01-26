@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NNShop</title>
+  <link rel="icon" type="svg" href="./assets/images/fav.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/sass/main.css">
+</head>
+<body>
+  <div class="root">
+    <header>
+      <section class="header__wrapper container flex items-center justify-between">
+        <!-- ========== HEADER LOGO ========== -->
+        <div>
+          <a href="#" class="header--logo flex items-center">
+            <img src="./assets/images/logo.png" alt="" class="header--image">
+            <p class="header--name">Furniro</p>
+          </a>
+        </div>
+        <!-- ========== HEADER NAV ========== -->
+        <div class="header__menu">
+          <nav class="nav__wrapper flex items-center">
+            <a href="#" class="menu--items txt-16-500">Home</a>
+            <a href="#" class="menu--items txt-16-500">Shop</a>
+            <a href="#" class="menu--items txt-16-500">About</a>
+            <a href="#" class="menu--items txt-16-500">Contact</a>
+          </nav>
+        </div>
+        
+        <!-- ========== HEADER ICON ========== -->
+        <div class="header__icon">
+          <nav class="nav__wrapper flex items-center">
+            <a href="#" class="icon--items">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M23.3333 14V8.16663H25.6666V15.1666H23.3333M23.3333 19.8333H25.6666V17.5H23.3333M11.6666 15.1666C14.7816 15.1666 20.9999 16.73 20.9999 19.8333V23.3333H2.33325V19.8333C2.33325 16.73 8.55159 15.1666 11.6666 15.1666ZM11.6666 4.66663C12.9043 4.66663 14.0912 5.15829 14.9664 6.03346C15.8416 6.90863 16.3333 8.09562 16.3333 9.33329C16.3333 10.571 15.8416 11.758 14.9664 12.6331C14.0912 13.5083 12.9043 14 11.6666 14C10.4289 14 9.24192 13.5083 8.36675 12.6331C7.49158 11.758 6.99992 10.571 6.99992 9.33329C6.99992 8.09562 7.49158 6.90863 8.36675 6.03346C9.24192 5.15829 10.4289 4.66663 11.6666 4.66663ZM11.6666 17.3833C8.20159 17.3833 4.54992 19.0866 4.54992 19.8333V21.1166H18.7833V19.8333C18.7833 19.0866 15.1316 17.3833 11.6666 17.3833ZM11.6666 6.88329C11.0168 6.88329 10.3936 7.14142 9.93417 7.60088C9.47471 8.06034 9.21659 8.68351 9.21659 9.33329C9.21659 9.98307 9.47471 10.6062 9.93417 11.0657C10.3936 11.5252 11.0168 11.7833 11.6666 11.7833C12.3164 11.7833 12.9395 11.5252 13.399 11.0657C13.8585 10.6062 14.1166 9.98307 14.1166 9.33329C14.1166 8.68351 13.8585 8.06034 13.399 7.60088C12.9395 7.14142 12.3164 6.88329 11.6666 6.88329Z" fill="black"/>
+              </svg>
+            </a>
+            <a href="#" class="icon--items">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M24.4999 24.5L19.2663 19.257M22.1666 12.25C22.1666 14.8801 21.1218 17.4024 19.2621 19.2622C17.4023 21.1219 14.88 22.1667 12.2499 22.1667C9.61985 22.1667 7.09751 21.1219 5.23778 19.2622C3.37804 17.4024 2.33325 14.8801 2.33325 12.25C2.33325 9.61998 3.37804 7.09763 5.23778 5.2379C7.09751 3.37816 9.61985 2.33337 12.2499 2.33337C14.88 2.33337 17.4023 3.37816 19.2621 5.2379C21.1218 7.09763 22.1666 9.61998 22.1666 12.25V12.25Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="icon--items">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M8.16659 3.5C4.94542 3.5 2.33325 6.08533 2.33325 9.275C2.33325 11.8498 3.35409 17.9608 13.4026 24.1383C13.5826 24.2479 13.7892 24.3058 13.9999 24.3058C14.2106 24.3058 14.4173 24.2479 14.5973 24.1383C24.6458 17.9608 25.6666 11.8498 25.6666 9.275C25.6666 6.08533 23.0544 3.5 19.8333 3.5C16.6121 3.5 13.9999 7 13.9999 7C13.9999 7 11.3878 3.5 8.16659 3.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="icon--items">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M25.2354 19.1926H8.95225L9.76982 17.5273L23.3542 17.5027C23.8136 17.5027 24.2073 17.1746 24.2894 16.7207L26.1706 6.19062C26.2198 5.91445 26.146 5.63008 25.9655 5.41406C25.8763 5.30775 25.7651 5.22211 25.6395 5.16309C25.5139 5.10407 25.377 5.07308 25.2382 5.07227L7.95693 5.01484L7.80928 4.32031C7.71631 3.87734 7.31709 3.55469 6.86318 3.55469H2.63857C2.38258 3.55469 2.13707 3.65638 1.95605 3.8374C1.77503 4.01841 1.67334 4.26393 1.67334 4.51992C1.67334 4.77592 1.77503 5.02143 1.95605 5.20245C2.13707 5.38346 2.38258 5.48516 2.63857 5.48516H6.08115L6.72646 8.55312L8.31514 16.2449L6.26982 19.5836C6.16361 19.727 6.09963 19.8972 6.08514 20.075C6.07064 20.2528 6.1062 20.4312 6.18779 20.5898C6.35186 20.9152 6.68271 21.1203 7.04912 21.1203H8.76631C8.40023 21.6065 8.20249 22.1988 8.20303 22.8074C8.20303 24.3551 9.46084 25.6129 11.0085 25.6129C12.5562 25.6129 13.814 24.3551 13.814 22.8074C13.814 22.1977 13.6116 21.6043 13.2507 21.1203H17.6558C17.2897 21.6065 17.0919 22.1988 17.0925 22.8074C17.0925 24.3551 18.3503 25.6129 19.8979 25.6129C21.4456 25.6129 22.7034 24.3551 22.7034 22.8074C22.7034 22.1977 22.5011 21.6043 22.1401 21.1203H25.2382C25.7687 21.1203 26.2034 20.6883 26.2034 20.1551C26.2018 19.8994 26.0992 19.6546 25.9178 19.4743C25.7365 19.294 25.4912 19.1927 25.2354 19.1926ZM8.35889 6.91797L24.1034 6.96992L22.5612 15.6051L10.1937 15.627L8.35889 6.91797ZM11.0085 23.6715C10.5327 23.6715 10.1444 23.2832 10.1444 22.8074C10.1444 22.3316 10.5327 21.9434 11.0085 21.9434C11.4843 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7815 23.2564 11.6195 23.4184C11.4574 23.5805 11.2377 23.6715 11.0085 23.6715ZM19.8979 23.6715C19.4222 23.6715 19.0339 23.2832 19.0339 22.8074C19.0339 22.3316 19.4222 21.9434 19.8979 21.9434C20.3737 21.9434 20.762 22.3316 20.762 22.8074C20.762 23.0366 20.671 23.2564 20.5089 23.4184C20.3469 23.5805 20.1271 23.6715 19.8979 23.6715Z" fill="black"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        
+        <div class="header__respon">
+          <div class="respon__icon">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- ========== BANNER WRAPPER ========== -->
+      <section class="banner__wrapper">
+        <img src="./assets/images/banner.png" alt="img" class="banner--img">
+        <div class="banner__infor">
+          <h1 class="banner--title">Shop</h1>
+          <p class="banner--desc txt-16-500">Home > Shop</p>
+        </div>
+      </section>
+      <!-- ========== PROSUCT WRAPPER ========== -->
+      <section class="shopPage__wrapper">
+        <!-- ===== SHOP HEADER ===== -->
+        <section class="shopPage__header">
+          <div class="container flex items-center justify-between">
+            <!-- ===== HEADER LEFT ===== -->
+            <div class="header__left flex items-center">
+              <div class="header__left__col flex items-center">
+                <div class="filter txt-20-400 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M22.0237 7.14292H8.92846M6.5475 7.14292H2.97607M22.0237 19.0477H8.92846M6.5475 19.0477H2.97607M16.0713 13.0953H2.97607M22.0237 13.0953H18.4523M7.73798 4.76196C8.05371 4.76196 8.35652 4.88739 8.57977 5.11065C8.80303 5.3339 8.92846 5.63671 8.92846 5.95244V8.33339C8.92846 8.64913 8.80303 8.95193 8.57977 9.17518C8.35652 9.39844 8.05371 9.52387 7.73798 9.52387C7.42225 9.52387 7.11944 9.39844 6.89619 9.17518C6.67293 8.95193 6.5475 8.64913 6.5475 8.33339V5.95244C6.5475 5.63671 6.67293 5.3339 6.89619 5.11065C7.11944 4.88739 7.42225 4.76196 7.73798 4.76196V4.76196ZM7.73798 16.6667C8.05371 16.6667 8.35652 16.7921 8.57977 17.0154C8.80303 17.2387 8.92846 17.5415 8.92846 17.8572V20.2382C8.92846 20.5539 8.80303 20.8567 8.57977 21.0799C8.35652 21.3032 8.05371 21.4286 7.73798 21.4286C7.42225 21.4286 7.11944 21.3032 6.89619 21.0799C6.67293 20.8567 6.5475 20.5539 6.5475 20.2382V17.8572C6.5475 17.5415 6.67293 17.2387 6.89619 17.0154C7.11944 16.7921 7.42225 16.6667 7.73798 16.6667ZM17.2618 10.7143C17.5775 10.7143 17.8803 10.8398 18.1036 11.063C18.3268 11.2863 18.4523 11.5891 18.4523 11.9048V14.2858C18.4523 14.6015 18.3268 14.9043 18.1036 15.1276C17.8803 15.3508 17.5775 15.4762 17.2618 15.4762C16.9461 15.4762 16.6433 15.3508 16.42 15.1276C16.1967 14.9043 16.0713 14.6015 16.0713 14.2858V11.9048C16.0713 11.5891 16.1967 11.2863 16.42 11.063C16.6433 10.8398 16.9461 10.7143 17.2618 10.7143V10.7143Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p>Filter</p>
+                </div>
+                <div class="header__left__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M18.6666 22.1667C17.7383 22.1667 16.8481 21.798 16.1917 21.1416C15.5353 20.4852 15.1666 19.595 15.1666 18.6667C15.1666 17.7385 15.5353 16.8482 16.1917 16.1918C16.8481 15.5355 17.7383 15.1667 18.6666 15.1667C19.5948 15.1667 20.4851 15.5355 21.1415 16.1918C21.7978 16.8482 22.1666 17.7385 22.1666 18.6667C22.1666 19.595 21.7978 20.4852 21.1415 21.1416C20.4851 21.798 19.5948 22.1667 18.6666 22.1667ZM9.33325 22.1667C8.40499 22.1667 7.51476 21.798 6.85838 21.1416C6.202 20.4852 5.83325 19.595 5.83325 18.6667C5.83325 17.7385 6.202 16.8482 6.85838 16.1918C7.51476 15.5355 8.40499 15.1667 9.33325 15.1667C10.2615 15.1667 11.1517 15.5355 11.8081 16.1918C12.4645 16.8482 12.8333 17.7385 12.8333 18.6667C12.8333 19.595 12.4645 20.4852 11.8081 21.1416C11.1517 21.798 10.2615 22.1667 9.33325 22.1667ZM18.6666 12.8334C17.7383 12.8334 16.8481 12.4646 16.1917 11.8082C15.5353 11.1519 15.1666 10.2616 15.1666 9.33337C15.1666 8.40512 15.5353 7.51488 16.1917 6.8585C16.8481 6.20212 17.7383 5.83337 18.6666 5.83337C19.5948 5.83337 20.4851 6.20212 21.1415 6.8585C21.7978 7.51488 22.1666 8.40512 22.1666 9.33337C22.1666 10.2616 21.7978 11.1519 21.1415 11.8082C20.4851 12.4646 19.5948 12.8334 18.6666 12.8334ZM9.33325 12.8334C8.40499 12.8334 7.51476 12.4646 6.85838 11.8082C6.202 11.1519 5.83325 10.2616 5.83325 9.33337C5.83325 8.40512 6.202 7.51488 6.85838 6.8585C7.51476 6.20212 8.40499 5.83337 9.33325 5.83337C10.2615 5.83337 11.1517 6.20212 11.8081 6.8585C12.4645 7.51488 12.8333 8.40512 12.8333 9.33337C12.8333 10.2616 12.4645 11.1519 11.8081 11.8082C11.1517 12.4646 10.2615 12.8334 9.33325 12.8334Z" fill="black"/>
+                  </svg>
+                </div>
+                <div class="header__left__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.5 6.75H19.5C20.2956 6.75 21.0587 7.06607 21.6213 7.62868C22.1839 8.19129 22.5 8.95435 22.5 9.75V14.25C22.5 15.0456 22.1839 15.8087 21.6213 16.3713C21.0587 16.9339 20.2956 17.25 19.5 17.25H4.5C3.70435 17.25 2.94129 16.9339 2.37868 16.3713C1.81607 15.8087 1.5 15.0456 1.5 14.25V9.75C1.5 8.95435 1.81607 8.19129 2.37868 7.62868C2.94129 7.06607 3.70435 6.75 4.5 6.75ZM4.5 8.25C4.10218 8.25 3.72064 8.40804 3.43934 8.68934C3.15804 8.97064 3 9.35218 3 9.75V14.25C3 14.6478 3.15804 15.0294 3.43934 15.3107C3.72064 15.592 4.10218 15.75 4.5 15.75H19.5C19.8978 15.75 20.2794 15.592 20.5607 15.3107C20.842 15.0294 21 14.6478 21 14.25V9.75C21 9.35218 20.842 8.97064 20.5607 8.68934C20.2794 8.40804 19.8978 8.25 19.5 8.25H4.5ZM1.5 3C1.5 2.80109 1.57902 2.61032 1.71967 2.46967C1.86032 2.32902 2.05109 2.25 2.25 2.25H21.75C21.9489 2.25 22.1397 2.32902 22.2803 2.46967C22.421 2.61032 22.5 2.80109 22.5 3C22.5 3.19891 22.421 3.38968 22.2803 3.53033C22.1397 3.67098 21.9489 3.75 21.75 3.75H2.25C2.05109 3.75 1.86032 3.67098 1.71967 3.53033C1.57902 3.38968 1.5 3.19891 1.5 3ZM1.5 21C1.5 20.8011 1.57902 20.6103 1.71967 20.4697C1.86032 20.329 2.05109 20.25 2.25 20.25H21.75C21.9489 20.25 22.1397 20.329 22.2803 20.4697C22.421 20.6103 22.5 20.8011 22.5 21C22.5 21.1989 22.421 21.3897 22.2803 21.5303C22.1397 21.671 21.9489 21.75 21.75 21.75H2.25C2.05109 21.75 1.86032 21.671 1.71967 21.5303C1.57902 21.3897 1.5 21.1989 1.5 21Z" fill="black"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="header__line"></div>
+              <div class="header__left__col flex items-center">
+                <p class="header__left--desc">Showing 1 - 16 of 32 results</p>
+              </div>
+            </div>
+            <!-- ===== HEADER RIGHT ===== -->
+            <div class="header__right flex items-center">
+              <form action="" class="header__form flex items-center">
+                <label for="" class="txt-20-400">Show</label>
+                <input type="text" name="" id="" value="16" class="txt-20-400">
+              </form>
+              <form action="" class="header__form flex items-center">
+                <label for="" class="txt-20-400">Short by</label>
+                <input type="text" name="" id="" value="Default" class="form__input_2 txt-20-400">
+              </form>
+            </div>
+          </div>
+          
+        </section>
+        <!-- ===== SHOP BODY ===== -->
+        <section class="shopPage__body container">
+          <div class="product__wrapper">
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ====== PRODUCT ITEMS ====== -->
+            <div class="product__items">
+              <div class="product__img__wrapper">
+                <img src="./assets/images/image 1.png" alt="img-product" class="product__img">
+                <div class="prd__sale flex items-center justify-center txt-16-500">-30%</div>
+              </div>
+              <div class="product__infor">
+                <h4 class="prd--name txt-24-600">Syltherine</h4>
+                <p class="prd--desc txt-16-500">Stylish cafe chair</p>
+                <div class="prd__price flex items-center">
+                  <span class="newPrice">2.500.000đ</span>
+                  <span class="oldPrice">3.500.000đ</span>
+                </div>
+              </div>
+              <div class="product__hover">
+                <div class="product__hover__content">
+                  <button class="prd__btn txt-16-600-150">Add to cart</button>
+                  <a href="#" class="prd__btn txt-16-600-150">View product</a>
+                  <ul class="prd__option flex items-center">
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 10.6666C11.4747 10.6666 11 10.8733 10.644 11.2046L5.94 8.46665C5.97333 8.31331 6 8.15998 6 7.99998C6 7.83998 5.97333 7.68665 5.94 7.53331L10.64 4.79331C11 5.12665 11.4733 5.33331 12 5.33331C13.1067 5.33331 14 4.43998 14 3.33331C14 2.22665 13.1067 1.33331 12 1.33331C10.8933 1.33331 10 2.22665 10 3.33331C10 3.49331 10.0267 3.64665 10.06 3.79998L5.36 6.53998C5 6.20665 4.52667 5.99998 4 5.99998C2.89333 5.99998 2 6.89331 2 7.99998C2 9.10665 2.89333 9.99998 4 9.99998C4.52667 9.99998 5 9.79331 5.36 9.45998L10.0587 12.2053C10.0211 12.3563 10.0014 12.5111 10 12.6666C10 13.0622 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.363 11.2346 14.5144C11.6001 14.6658 12.0022 14.7054 12.3902 14.6282C12.7781 14.551 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0568C14.0387 12.6689 13.9991 12.2667 13.8478 11.9013C13.6964 11.5358 13.44 11.2235 13.1111 11.0037C12.7822 10.7839 12.3956 10.6666 12 10.6666Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Share</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z" fill="white"/>
+                      </svg>
+                      <p class="txt-16-600-150">Compare</p>
+                    </li>
+                    <li class="prd__option--items flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
+                      </svg>
+                      <p class="txt-16-600-150">Like</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===== SHOP FOOTER ===== -->
+        <section class="shopPage__footer container">
+          <ul class="viewMore">
+            <li class="viewMore--items viewMore--active">1</li>
+            <li class="viewMore--items">2</li>
+            <li class="viewMore--items">3</li>
+            <li class="viewMore--items">4</li>
+            <li class="viewMore--items">Next</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__wrapper container">
+        <!-- ========== FOOTER MAIN ========== -->
+        <div class="footer__main">
+          <!-- ====== FOOTER INFOR ====== -->
+          <div class="footer__infor">
+            <h2><a href="./index.html">Funiro.</a></h2>
+            <p>400 University Drive Suite 200 Coral <br> Gables, <br>FL 33134 USA</p>
+          </div>
+          <!-- ====== FOOTER LINK ====== -->
+          <div class="footer__link">
+            <h4 class="txt-16-500">Links</h4>
+            <nav class="nav__wrapper">
+              <a href="" class="nav--items txt-16-500">Home</a>
+              <a href="" class="nav--items txt-16-500">Shop</a>
+              <a href="" class="nav--items txt-16-500">About</a>
+              <a href="" class="nav--items txt-16-500">Contact</a>
+            </nav>
+          </div>
+          <!-- ====== FOOTER HELP ====== -->
+          <div class="footer__link">
+            <h4 class="txt-16-500">Help</h4>
+            <nav class="nav__wrapper">
+              <a href="" class="nav--items txt-16-500">Payment Options</a>
+              <a href="" class="nav--items txt-16-500">Returns</a>
+              <a href="" class="nav--items txt-16-500">Privacy Policies</a>
+            </nav>
+          </div>
+          <!-- ====== FOOTER CONTACT ====== -->
+          <div class="footer__contact">
+            <h4 class="txt-16-500">Newsletter</h4>
+            <form action="" class="footer__form">
+              <input type="text" placeholder="Enter Your Email Address">
+              <button>SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+        <!-- ========== FOOTER COPYRIGHT ========== -->
+        <div class="footer__copyright">
+          <p>2023 furino. All rights reverved</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

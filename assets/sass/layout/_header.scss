@@ -1,0 +1,83 @@
+.header__wrapper{
+  padding: 30px 0;
+}
+.header--image{
+  width: 5rem;
+  height: fit-content
+}
+.header--name{
+  @include txtDefine;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.header--logo{
+  gap: .5rem;
+}
+.nav__wrapper{
+  gap: 7.5rem;
+  .menu--items{
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: .2rem;
+      background: #000;
+      transition: all ease .2s;
+    }
+    &:hover::before{
+      width: 100%;
+    }
+  }
+  
+}
+.header__menu {
+  display: none;
+}
+.header__icon {
+  display: none;
+  gap: 4.5rem;
+}
+.header__respon {
+
+  .respon__icon > ion-icon {
+    font-size: 2.8rem;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header__wrapper {
+    padding: 3rem 1.5rem;
+  }
+  .header__respon{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .header__respon{
+    display: none;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__icon {
+    display: block;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  
+}

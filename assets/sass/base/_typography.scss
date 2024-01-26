@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.txt-16-500 {
+  @include txtDefine;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.txt-16-600-150 {
+  @include txtDefine;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $white-FFF;
+}
+.txt-20-600-120 {
+  @include txtDefine;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 120%
+}
+.txt-20-400 {
+  @include txtDefine;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.txt-24-600 {
+  @include txtDefine;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.txt-40-500 {
+  @include txtDefine;
+  font-size: 4rem;
+  font-weight: 500;
+}

@@ -1,0 +1,21 @@
+.service__wrapper{
+  margin-top: 6rem;
+  padding: 10rem;
+  background-color: $yellow-FAF;
+  .service__items {
+    gap: 1rem;
+
+    .service--name {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 150%;
+      color: $black-242;
+    }
+    .service--desc {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 150%;
+      color: $gray-898;
+    }
+  }
+}

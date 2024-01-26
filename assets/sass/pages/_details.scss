@@ -1,0 +1,28 @@
+.breadcrumb__main {
+  padding: 3.8rem 0;
+  background-color: $yellow-F9F;
+  .breadcrumb__wrapper {
+    gap: 3rem;
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      &--items {
+        @include txtDefine;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $gray-9F9;
+      }
+    }
+    .breadcrumb__line {
+      width: .2rem;
+      height: 4rem;
+      background-color: $gray-9F9;
+    }
+    .breadcrumb__prd {
+      @include txtDefine;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

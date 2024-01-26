@@ -1,0 +1,106 @@
+.product__wrapper {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .product__items {
+    border-radius: .6rem;
+    position: relative;
+    background-color: $white-F4F;
+    overflow: hidden;
+    .product__img__wrapper {
+      position: relative;
+      .product__img{
+        border-radius: .6rem .6rem 0 0;
+        width: 100%;
+        height: fit-content;
+      }
+      .prd__sale{
+        position: absolute;
+        top: 2.4rem;
+        right: 2.4rem;
+        height: 4.8rem;
+        width: 4.8rem;
+        line-height: 150%;
+        border-radius: 50%;
+        color: $white-FFF;
+        background-color: $red-E97;
+      }
+    }
+    .product__infor {
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      .prd--name {
+        line-height: 120%;
+        color: $gray-3A3;
+      }
+      .prd--desc{
+        line-height: 150%;
+        color: $gray-898;
+      }
+      .prd__price{
+        gap: 1.6rem;
+        .newPrice{
+          @include txtDefine;
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 150%;
+          color: $gray-3A3;
+        }
+        .oldPrice{
+          @include txtDefine;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 150%;
+          color: $gray-B0B;
+          text-decoration-line: line-through;
+        }
+      }
+    }
+    .product__hover {
+      border-radius: .6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba($color: $gray-3A3, $alpha: .72);
+      opacity: 0;
+      visibility: hidden;
+      transition: all ease .3s;
+      &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+        .prd__btn{
+          padding: 1.2rem 6rem;
+          color: $yellow-B88;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: $white-FFF;
+        }
+        .prd__option{
+          gap: 2rem;
+          &--items {
+            color: $white-FFF;
+            gap: .4rem;
+            cursor: pointer;
+          }
+        }
+      }
+      
+    }
+
+    &:hover .product__hover {
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
